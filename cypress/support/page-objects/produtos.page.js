@@ -14,7 +14,7 @@ class ProdutosPage {
         cy.get('.button-variable-item-' + cor).click()
         cy.get('.input-text').clear().type(quantidade)
         cy.get('.single_add_to_cart_button').click({force:true})
-        cy.get('.woocommerce-message').should('contain', 'foi adicionado no seu carrinho')
+        cy.get('.woocommerce-message').should('contain', 'foram adicionados no seu carrinho')
         
 
     }
